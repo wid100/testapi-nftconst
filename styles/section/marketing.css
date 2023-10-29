@@ -1,0 +1,181 @@
+.marketing-hero{
+  background: #f8faff;
+  position: relative;
+}
+.marketing-hero-warrper{
+  display: grid;
+  grid-template-columns: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.marketing-hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  z-index: 3;
+}
+.marketing-hero .hero-content h1{
+      font-family: "Urbanist";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 67px;
+      line-height: 128%;
+      letter-spacing: -0.5px;
+      color: #061237;
+}
+.marketing-hero .hero-content span{
+color: #6C54EA;
+}
+@media screen and (max-width: 600px) {
+  #metaverseHero .hero-content {
+    padding: 10px;
+  }
+}
+.marketing-hero .hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.marketing-hero .btn-hero-1 {
+  padding: 16px 46px;
+  background: #6e58eb;
+  box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+  border-radius: 37px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid var(--main-color);
+}
+
+.marketing-hero .btn-hero-1:hover {
+  background: #4c38bd;
+  border: 2px solid #4c38bd;
+}
+.marketing-hero .btn-hero-2 {
+  padding: 16px 46px;
+  border: 2px solid #6c54ea;
+  filter: drop-shadow(0px 19px 29px rgba(62, 53, 120, 0.14));
+  border-radius: 37px;
+  color: #6e58eb;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  transition: 0.3s;
+}
+.marketing-hero .btn-hero-2:hover {
+  background: #6e58eb;
+  color: #ffffff;
+}
+.marketing-hero .raleway-black-16{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #11142d;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.marketing-balls img:nth-child(1){
+  position: absolute;
+  left: 3%;
+  bottom: 43%;
+}
+.marketing-balls img:nth-child(2){
+  position: absolute;
+  right: 10%;
+  bottom: 53%;
+}
+.marketing-balls img:nth-child(3){
+  position: absolute;
+  right: 0;
+  bottom: 44%;
+}
+@media screen and (max-width: 1150px) {
+  .marketing-balls img:nth-child(1) {
+      display: none;
+  }
+  .marketing-balls img:nth-child(2) {
+      display: none;
+  }
+}
+@media screen and (max-width: 992px){
+  .marketing-hero-warrper{
+      grid-template-columns: 100%;
+  }
+  .marketing-hero .hero-content h1{
+      font-size: 50px;
+  }
+  .marketing-hero .hero-content{
+      gap: 10px;
+  }
+  .marketing-balls img:nth-child(3) {
+      display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  .marketing-hero .hero-content h1{
+      font-size:40px;
+  }
+  .marketing-hero .raleway-black-16{
+      width: 100%;
+  }
+  
+}
+@media screen and (max-width: 600px){
+  .marketing-hero .hero-content h1{
+      font-size:30px;
+  }
+  .marketing-hero .hero-btns{
+      gap: 20px;
+      flex-direction: column;
+      width: 100%;
+  }
+  .marketing-hero .raleway-black-16{
+      width: 100%;
+  }
+  
+}
+/* <!-- =============== marketing dashbord start =========== --> */
+.mareting-dashbord{
+  margin-top: -214px;
+  position: relative;
+}
+.dashbord-img img{
+  width: 100%;
+  z-index: 1;
+}
+@media screen and (max-width: 1150px){
+  .mareting-dashbord {
+      margin-top: -130px;
+      position: relative;
+  }
+}
+@media screen and (max-width: 992px){
+  .mareting-dashbord {
+      margin-top: -113px;
+      position: relative;
+  }
+}
+@media screen and (max-width: 768px){
+  .mareting-dashbord {
+      margin-top: -83px;
+      position: relative;
+  }
+}
+@media screen and (max-width: 600px){
+  .mareting-dashbord {
+      margin-top: -83px;
+      position: relative;
+  }
+}

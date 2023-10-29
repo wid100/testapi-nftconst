@@ -1,0 +1,182 @@
+/* ============== Hero section start ================== */
+
+.about-hero {
+  background: #f8faff;
+}
+
+.about-hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-hero-left h1 {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 128%;
+  letter-spacing: -0.5px;
+  color: #061237;
+}
+
+.about-hero-left p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #11142d;
+  margin-top: 10px;
+}
+
+.about-hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-top: 20px;
+}
+
+.about-hero-btn .btn-hero-1 {
+  padding: 16px 46px;
+  background: #6e58eb;
+  box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+  border-radius: 37px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid var(--main-color);
+}
+
+.about-hero-btn .btn-hero-1:hover {
+  background: #4c38bd;
+  border: 2px solid #4c38bd;
+}
+
+.about-hero-right {
+  position: relative;
+}
+
+.hero-bg-img-1 img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .about-hero-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .about-hero-left {
+    text-align: center;
+  }
+  .about-hero-btn .btn-hero-1 {
+    text-align: center;
+    margin: auto;
+  }
+  .about-hero-left h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-hero-left h1 {
+    font-size: 30px;
+  }
+}
+
+/* ============== Hero section end ================== */
+
+/* <!-- ================ Solving Problem Services start ================ --> */
+
+/* .solving-problem-service{
+    margin-bottom: 200px;
+} */
+
+.solving-problem-service-content h3 {
+  font-size: 40px;
+  font-family: "Urbanist";
+  font-weight: 800;
+  color: #323232;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.solving-problem-video {
+  position: relative;
+}
+
+.solving-problem-video-img img {
+  width: 100%;
+}
+
+.about-boll-img-1 {
+  position: absolute;
+  top: 6%;
+  left: -9%;
+  z-index: -1;
+}
+
+.about-boll-img-2 {
+  position: absolute;
+  bottom: -16%;
+  right: -4%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1440px) {
+  .about-boll-img-1 {
+    display: none;
+  }
+  .about-boll-img-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .solving-problem-service-content h3 {
+    font-size: 30px;
+  }
+}
+
+/* <!-- ================ Solving Problem Services end ================ --> */
+
+/* {===================service section start ==================} */
+
+.about-service-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.our-service-item:hover p {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+  .about-service-items {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-service-items {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  h2.sec-title-left {
+    font-size: 30px;
+  }
+}
+
+/* {===================service section  end ==================} */
+
+.solving-problem-service-content {
+  text-align: center;
+}

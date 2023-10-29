@@ -1,0 +1,190 @@
+/* <!-- =============== Defi Hero start ======================= --> */
+.defi-hero{
+  background: #F8FAFF;
+}
+.defi-hero-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+.defi-hero-left h1{
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 128%;
+  letter-spacing: -0.5px;
+  color: #061237;
+}
+.defi-hero-left span{
+color: #6C54EA;
+}
+.defi-hero-left p{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #11142d;
+  margin-top: 10px;
+}
+.defi-hero-btn{
+  display: flex;
+align-items: center;
+gap: 26px;
+margin-top: 20px;
+}
+.defi-hero-btn .btn-hero-1{
+  padding: 16px 46px;
+  background: #6e58eb;
+  box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+  border-radius: 37px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid var(--main-color);
+}
+.defi-hero-btn .btn-hero-1:hover{
+  background: #4c38bd;
+border: 2px solid #4c38bd;
+}
+.defi-hero-btn .btn-hero-2{
+  padding: 16px 46px;
+border: 2px solid #6c54ea;
+filter: drop-shadow(0px 19px 29px rgba(62, 53, 120, 0.14));
+border-radius: 37px;
+color: #6e58eb;
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+transition: 0.3s;
+}
+.defi-hero-btn .btn-hero-2:hover{
+  background: #6e58eb;
+  color: #ffffff; 
+}
+.defi-hero-right{
+  position: relative;
+}
+.hero-bg-img-1 img{
+  width: 100%;
+}
+.defi-hero-right .hero-bg-img-2{
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  animation: hero-img-2 1s linear 2s infinite alternate;
+}
+.defi-hero-right .hero-bg-img-2 img{
+  width: 100%;
+}
+@keyframes hero-img-2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.defi-hero-right .hero-bg-img-3{
+  position: absolute;
+  bottom: 10%;
+  right:  -5%;
+  animation: hero-img-3 1s linear 2s infinite alternate;
+}
+@keyframes hero-img-3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.defi-hero-right .hero-bg-img-4{
+  position: absolute;
+  left: -8%;
+  bottom: -4%;
+  animation: hero-img-4 2s linear infinite alternate;
+}
+@keyframes hero-img-4 {
+  0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+}
+@media screen and (max-width: 1240px) {
+  .defi-hero-wrapper{
+      grid-template-columns: 1fr;
+      gap: 50px;
+  }
+  .defi-hero-right .hero-bg-img-2{
+    top: -5%;
+    left: 0%;
+}
+.defi-hero-right .hero-bg-img-3{
+  bottom: 10%;
+  right: 0%;
+}
+.defi-hero-right .hero-bg-img-4{
+left: 0%;
+bottom: -4%;
+}
+}
+@media screen and (max-width: 768px) {
+.defi-hero-left{
+  text-align: center;
+}
+.defi-hero-left h1{
+  font-size: 40px;
+}
+.defi-hero-btn{
+  justify-content: center;
+}
+.defi-hero-right .hero-bg-img-2 img{
+  width: 150px !important;
+}
+.hero-bg-img-4 img {
+  width: 160px;
+}
+.hero-bg-img-3 img{width: 226px;}
+.defi-hero-right .hero-bg-img-3 {bottom: 22%;right: 2%;}
+}
+@media screen and (max-width: 550px) {
+.defi-hero-left{
+  text-align: center;
+}
+.defi-hero-left h1{
+  font-size: 30px;
+}
+.defi-hero-btn{
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.defi-hero-right .hero-bg-img-2{
+  top: -22%;
+  left: -5%;
+}
+.defi-hero-right .hero-bg-img-2 img{
+  width: 150px !important;
+}
+.hero-bg-img-4 img {
+  width: 160px;
+}
+.hero-bg-img-3 img{width: 170px;}
+.defi-hero-right .hero-bg-img-3 {bottom: 22%;right: 0%;}
+}
+
+
+/* <!-- =============== Defi Hero end ======================= --> */
